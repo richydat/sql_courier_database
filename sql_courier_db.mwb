@@ -1,0 +1,114 @@
+DROP DATABASE IF EXISTS sql_courier;
+CREATE DATABASE sql_courier;
+USE sql_courier;
+create table if not exists customers
+(
+	customer_id int primary key auto_increment,
+    first_name varchar(50) not null,
+    last_name varchar(50) not null,
+    customer_group varchar(50) not null,
+    customer_group_specify varchar(50) not null,
+    customer_category_name varchar(50) not null,
+    phone_number varchar(50) not null,
+    fax_number varchar(50) not null,
+    website varchar(255) not null
+)ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+insert into customers values (1, 'Waldemar', 'Fisar', 'Tailspin Toys', 'Tailspin Toys (Head Office)', 'Novelty Shop', '(308) 555-0100', '(308) 555-0101', 'http://www.tailspintoys.com');
+insert into customers values (2, 'Lorena', 'Cindric', 'Tailspin Toys', 'Tailspin Toys (Sylvanite, MT)', 'Novelty Shop', '(406) 555-0100', '(406) 555-0101', 'http://www.tailspintoys.com/Sylvanite');
+insert into customers values (3, 'Bhaargav', 'Rambhatla', 'Tailspin Toys', 'Tailspin Toys (Peeples Valley, AZ)', 'Novelty Shop', '(480) 555-0100', '(480) 555-0101', 'http://www.tailspintoys.com/PeeplesValley');
+insert into customers values (4, 'Daniel', 'Roman', 'Tailspin Toys', 'Tailspin Toys (Medicine Lodge, KS)', 'Novelty Shop', '(316) 555-0100', '(316) 555-0101', 'http://www.tailspintoys.com/MedicineLodge');
+insert into customers values (5, 'Johanna',	'Huiting', 'Tailspin Toys', 'Tailspin Toys (Gasport, NY)', 'Novelty Shop', '(212) 555-0100', '(212) 555-0101', 'http://www.tailspintoys.com/Gasport');
+insert into customers values (6, 'Biswajeet', 'Thakur', 'Tailspin Toys', 'Tailspin Toys (Jessie, ND)', 'Novelty Shop' ,'(701) 555-0100', '(701) 555-0101', 'http://www.tailspintoys.com/Jessie');
+insert into customers values (7, 'Kalidas', 'Nadar', 'Tailspin Toys', 'Tailspin Toys (Frankewing, TN)', 'Novelty Shop', '(423) 555-0100', '(423) 555-0101', 'http://www.tailspintoys.com/Frankewing');
+insert into customers values (8, 'Kanti', 'Kotadia', 'Tailspin Toys', 'Tailspin Toys (Bow Mar, CO)', 'Novelty Shop', '(303) 555-0100', '(303) 555-0101', 'http://www.tailspintoys.com/BowMar');
+insert into customers values (9, 'Sointu', 'Aalto', 'Tailspin Toys', 'Tailspin Toys (Netcong, NJ)', 'Novelty Shop', '(201) 555-0100', '(201) 555-0101', 'http://www.tailspintoys.com/Netcong');
+insert into customers values (10, 'Siddhartha', 'Parkar', 'Tailspin Toys', 'Tailspin Toys (Wimbledon, ND)', 'Novelty Shop', '(701) 555-0100', '(701) 555-0101', 'http://www.tailspintoys.com/Wimbledon');
+insert into customers values (11, 'Elnaz', 'Javan', 'Tailspin Toys', 'Tailspin Toys (Devault, PA)', 'Novelty Shop', '(215) 555-0100', '(215) 555-0101', 'http://www.tailspintoys.com/Devault');
+insert into customers values (13, 'Razeena', 'Hosseini', 'Tailspin Toys', 'Tailspin Toys (Stonefort, IL)', 'Novelty Shop', '(217) 555-0100', '(217) 555-0101', 'http://www.tailspintoys.com/Stonefort');
+insert into customers values (14, 'Tereza', 'Valentova', 'Tailspin Toys', 'Tailspin Toys (Long Meadow, MD)', 'Novelty Shop', '(240) 555-0100', '(240) 555-0101', 'http://www.tailspintoys.com/LongMeadow');
+insert into customers values (15, 'Filips', 'Jaunzems', 'Tailspin Toys', 'Tailspin Toys (Batson, TX)', 'Novelty Shop', '(210) 555-0100', '(210) 555-0101', 'http://www.tailspintoys.com/Batson');
+insert into customers values (16, 'Nitin', 'Matondkar', 'Tailspin Toys', 'Tailspin Toys (Coney Island, MO)', 'Novelty Shop', '(314) 555-0100', '(314) 555-0101', 'http://www.tailspintoys.com/ConeyIsland');
+insert into customers values (17, 'Adam', 'Kubat', 'Tailspin Toys', 'Tailspin Toys (East Fultonham, OH)', 'Novelty Shop', '(216) 555-0100', '(216) 555-0101', 'http://www.tailspintoys.com/EastFultonham');
+insert into customers values (18, 'Isabelle', 'Vodlan', 'Tailspin Toys', 'Tailspin Toys (Goffstown, NH)', 'Novelty Shop', '(603) 555-0100', '(603) 555-0101', 'http://www.tailspintoys.com/Goffstown');
+insert into customers values (19, 'Mithun', 'Bhattacharya', 'Tailspin Toys', 'Tailspin Toys (Lemeta, AK)', 'Novelty Shop', '(907) 555-0100', '(907) 555-0101', 'http://www.tailspintoys.com/Lemeta');
+insert into customers values (20, 'Nghi', 'Hua', 'Tailspin Toys', 'Tailspin Toys (College Place, WA)', 'Novelty Shop', '(206) 555-0100', '(206) 555-0101', 'http://www.tailspintoys.com/CollegePlace');
+insert into customers values (21, 'Duleep', 'Raju', 'Tailspin Toys', 'Tailspin Toys (Tresckow, PA)', 'Novelty Shop', '(215) 555-0100', '(215) 555-0101', 'http://www.tailspintoys.com/Tresckow');
+insert into customers values (22, 'Cristina', 'Longo', 'Tailspin Toys', 'Tailspin Toys (Ward Ridge, FL)', 'Novelty Shop', '(239) 555-0100', '(239) 555-0101', 'http://www.tailspintoys.com/WardRidge');
+insert into customers values (23, 'Hang', 'Tang', 'Tailspin Toys', 'Tailspin Toys (Ikatan, AK)', 'Novelty Shop', '(907) 555-0100', '(907) 555-0101', 'http://www.tailspintoys.com/Ikatan');
+insert into customers values (24, 'Intira', 'Mookjai', 'Tailspin Toys', 'Tailspin Toys (Dundarrach, NC)', 'Novelty Shop', '(252) 555-0100', '(252) 555-0101', 'http://www.tailspintoys.com/Dundarrach');
+insert into customers values (25, 'Sulabha', 'Khalsa', 'Tailspin Toys', 'Tailspin Toys (Avenal, CA)', 'Novelty Shop', '(209) 555-0100', '(209) 555-0101', 'http://www.tailspintoys.com/Avenal');
+insert into customers values (26, 'Dhanishta', 'Majji', 'Tailspin Toys', 'Tailspin Toys (Hedrick, IA)', 'Novelty Shop', '(319) 555-0100', '(319) 555-0101', 'http://www.tailspintoys.com/Hedrick');
+insert into customers values (27, 'Paula', 'Gonzales', 'Tailspin Toys', 'Tailspin Toys (Bowlus, MN)', 'Novelty Shop', '(218) 555-0100', '(218) 555-0101', 'http://www.tailspintoys.com/Bowlus');
+
+create table if not exists delivery
+(
+	delivery_id int primary key auto_increment,
+    delivery_method varchar(50),
+    location varchar(50)
+)ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+insert into delivery values (1, 'Van', 'Lisco (Nebraska)');
+insert into delivery values (2, 'Van', 'Sylvanite (Montana)');
+insert into delivery values (3, 'Rider', 'Peeples Valley (Arizona)');
+insert into delivery values (4, 'Van', 'Medicine Lodge (Kansas)');
+insert into delivery values (5, 'Van', 'Gasport (New York)');
+insert into delivery values (6, 'Rider', 'Jessie (North Dakota)');
+insert into delivery values (7, 'Van', 'Frankewing (Tennessee)');
+insert into delivery values (8, 'Van', 'Bow Mar (Colorado)');
+insert into delivery values (9, 'Van', 'Netcong (New Jersey)');
+insert into delivery values (10, 'Rider', 'Wimbledon (North Dakota)');
+insert into delivery values (11, 'Van', 'Devault (Pennsylvania)');
+insert into delivery values (12, 'Van', 'Biscay (Minnesota)');
+insert into delivery values (13, 'Rider', 'Stonefort (Illinois)');
+insert into delivery values (14, 'Van', 'Long Meadow (Maryland)');
+insert into delivery values (15, 'Van', 'Batson (Texas)');
+insert into delivery values (16, 'Rider', 'Coney Island (Missouri)');
+insert into delivery values (17, 'Rider', 'East Fultonham (Ohio)');
+insert into delivery values (18, 'Van', 'Goffstown (New Hampshire)');
+insert into delivery values (19, 'Van', 'Lemeta (Alaska)');
+insert into delivery values (20, 'Van', 'College Place (Washington)');
+insert into delivery values (21, 'Rider', 'Tresckow (Pennsylvania)');
+insert into delivery values (22, 'Van', 'Ward Ridge (Florida)');
+insert into delivery values (23, 'Van', 'Ikatan (Alaska)');
+insert into delivery values (24, 'Van', 'Dundarrach (North Carolina)');
+insert into delivery values (25, 'Van', 'Avenal (California)');
+insert into delivery values (26, 'Rider', 'Hedrick (Iowa)');
+insert into delivery values (27, 'Van', 'Bowlus (Minnesota)');
+
+create table if not exists orders
+(
+	order_id int primary key auto_increment,
+    delivey_id int default null,
+	customer_id int default null,
+	item_name varchar(255),
+    duration_in_mins int default 0,
+    payment_mode varchar(50) default 0,
+    price decimal(5,2) default 0,
+		foreign key fk_orders_customers (customer_id)
+        references customers (customer_id)
+        on update cascade
+        on delete no action,
+        
+		foreign key fk_orders_delivery (order_id)
+        references delivery (delivery_id)
+        on update cascade
+        on delete no action
+)ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+insert into orders values (1, 5, 7, 'product24', 115, 'Online', 18);
+insert into orders values (2, 22, 17, 'product17', 35, 'Cash', 16);
+insert into orders values (3, 27, 15, 'product14', 129, 'Cash', 17);
+insert into orders values (4, 21, 16, 'product13', 119, 'Online', 20);
+insert into orders values (5, 14, 5, 'product11', 99, 'Online', 15);
+insert into orders values (6, 13, 14, 'product8', 44, 'Cash', 19);
+insert into orders values (7, 22, 25, 'product9', 82, 'Cash', 10);
+insert into orders values (8, 24, 5, 'product18', 20, 'Online', 13);
+insert into orders values (9, 24, 7, 'product8', 91, 'Cash', 13);
+insert into orders values (10, 7, 18, 'product8', 105, 'Online', 13);
+insert into orders values (11, 16, 14, 'product23', 21, 'Online', 19);
+insert into orders values (12, 12, 14, 'product12', 97, 'Cash', 11);
+insert into orders values (13, 12, 14, 'product4', 117, 'Online', 16);
+insert into orders values (14, 15, 10, 'product5', 112, 'Cash', 17);
+insert into orders values (15, 10, 24, 'product22', 45, 'Cash', 12);
+insert into orders values (16, 7, 14, 'product22', 130, 'Cash', 15);
+insert into orders values (17, 9, 26, 'product17', 124, 'Cash', 20);
+insert into orders values (18, 10, 9, 'product23', 121, 'Cash', 11);
+
